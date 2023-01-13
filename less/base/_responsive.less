@@ -1,0 +1,392 @@
+@media all and (max-width: 1024px) {
+    .header{
+        &-inner{
+            .logo{
+                width: 150px;
+                margin-left: 20px;
+                img{
+                    width: 100%;
+                }
+            }            
+            nav{
+                .navbar{
+                    margin-right: 0;
+                    li{
+                        padding: 0 10px;
+                        a{
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+            .right-icons{
+                i{
+                    padding: 0 10px;
+                }
+            }
+        }
+    }
+    .main-content{
+        .poster{
+            &-item{
+                .poster-content{
+                    .row{
+                       .poster-content-inner{
+                            margin-left: 40px;
+                            .poster-title{
+                                margin-left: 0;
+                                font-size: 40px;
+                            }
+                            .poster-sub-title{
+                                margin-left: 0;
+                                font-size: 20px;
+                            }
+                            .poster-detail{
+                                font-size: 10px;
+                            } 
+                        } 
+                    }
+                    
+                }
+            }
+        }
+        .strength{
+            padding-top: 45px;
+            &-inner{
+                overflow: hidden;
+                .row{
+                    .strength-item{
+                        .col(33.333%);
+                        padding-left: 0;
+                        padding-right: 0;
+                        .strength-image{
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media all and (max-width: 768px) {
+    .header{
+        opacity: 1;
+        z-index: 10;
+        &-inner{
+            .logo{
+                order: 2;
+                margin-left: 50px;
+            }
+            nav{
+                order: 1;
+                .nav-icon{
+                    display: block;
+                    color: #fff;
+                }
+                .navbar{
+                    .transformer(translateX(-100%));
+                    position: fixed;
+                    z-index: 999;
+                    top: 0;
+                    left: 0;
+                    background-color: #000;
+                    height: 105vh;
+                    width: 30vw;
+                    li{
+                        display: block;
+                        padding: 20px 0;
+                        padding-left: 50px;
+                        border-bottom: 1px solid gray;
+                        .nav-back{
+                            i{
+                                display: block;
+                            }
+                        }
+                        &:first-child{
+                            padding: 32px 24px;
+                        }
+                    }
+                }
+                .active{
+                    .transformer(translateX(0));
+                    .transition(all, 0.5s);
+                }
+            }
+            .right-icons{
+                order: 3;
+            }
+        }
+    }
+    .main-content{
+        .poster{
+            padding-top: 60px;
+            &-item{
+                .poster-content{
+                    .row{
+                        .poster-content-inner{
+                            margin-top: -50px;
+                            .poster-title{
+                                font-size: 30px;
+                            }
+                            .poster-sub-title{
+                                margin-top: 10px;
+                                font-size: 20px;
+                            }
+                            .poster-detail{
+                                font-size: 10px;
+                            }
+                            a{
+                                margin-top: 20px;
+                                font-size: 10px;
+                                height: 30px;
+                                line-height: 30px;
+                            }
+                        } 
+                    }       
+                }
+            }
+        }
+        .strength{
+            &-inner{
+                .row{
+                    .strength-item{
+                        .col(50%);
+                        padding: 0;
+                    }
+                    .item-1{
+                        order: 1;
+                    }
+                    .item-2{
+                        order: 2;
+                    }
+                    .item-3{
+                        order: 4;
+                    }
+                    .item-4{
+                        order: 3;
+                    }
+                    .item-5{
+                        order: 5;
+                    }
+                    .item-6{
+                        order: 6;
+                    }
+                }
+            }
+        }
+        .product-total{       
+            .container{
+                .row{
+                    .product-item{
+                        .col(50%);
+                    }
+                }                
+            }
+        }
+        .brands{
+            &-inner{
+                .row{
+                    .brands-inner-item{
+                        .col(33.333%);
+                    }
+                }
+            }
+        }
+    }
+    .footer{
+        &-top{
+            padding-top: 0px;
+            &-inner{
+                padding: 25px 100px;
+            }
+        }
+        &-bottom{
+            margin-top: 50px;
+            &-inner{
+                .category{
+                    .col(50%);
+                    padding-left: 70px;
+                }
+            }
+        }
+    }
+}
+@media all and (max-width: 376px){
+    .header{
+        &-inner{
+            .logo{
+                margin-left: 0;
+            }
+            .right-icons{
+                i{
+                    font-size: 12px;
+                }
+            }
+            nav{
+                .navbar{
+                    width: 40vw;
+                    li{
+                        padding-left: 30px;
+                    }
+                }
+            }
+        }
+    }
+    .main-content{
+        .poster{
+            overflow: hidden;
+            &-item{
+                width: 200%;
+                .poster-content{
+                    .row{
+                        .poster-content-inner{
+                            margin-top: -60px;
+                            margin-left: 0;
+                            .poster-title{
+                                font-size: 20px;
+                            }
+                            .poster-sub-title{
+                                font-size: 15px;
+                            }
+                            .poster-detail{
+                                font-size: 10px;
+                            }
+                            a{
+                                font-size: 8px;
+                                .col(25%);
+                            }
+                        }
+                    }
+                }                
+            }
+        }
+        .strength{
+            &-inner{
+                .row{
+                    .strength-item{
+                        .col(100%);
+                        padding: 0;
+                        height: 200px;
+                        &-inner{
+                            padding-top: 10px;
+                            img{
+                                width: 10%;
+                            }
+                            .strength-title{
+                                font-size: 14px;
+                                padding-top: 10px;
+                            }
+                            .strength-detail{
+                                font-size: 14px;
+                                padding-top: 10px 30px;
+                            }
+                        }
+                    }
+                    .item-1{
+                        order: 1;
+                    }
+                    .item-2{
+                        order: 2;
+                    }
+                    .item-3{
+                        order: 3;
+                    }
+                    .item-4{
+                        order: 4;
+                    }
+                    .item-5{
+                        order: 5;
+                    }
+                    .item-6{
+                        order: 6;
+                    }
+                }
+            }
+        }
+        .product-total{
+            .container{
+                .product-group{
+                    ul{
+                        li{
+                            font-size: 12px;
+                            padding: 18px;
+                        }
+                    }
+                }
+                .row{
+                    .product-item{
+                        .col(100%);
+                        text-align: center;
+                    }
+                }
+            }
+        }
+        .feedback{
+            &-inner{
+                h1{
+                    font-size: 20px;
+                }
+                .slider{
+                    .slick-list{
+                        .slick-track{
+                            .slider-item{
+                                &-inner{
+                                    padding: 0;
+                                    .speech{
+                                        font-size: 14px;
+                                    }
+                                    .client{
+                                        font-size: 14px;
+                                    }
+                                    .status{
+                                        font-size: 14px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .brands{
+            margin-top: 50px;
+            &-inner{
+                .row{
+                    .brands-inner-item{
+                        .col(50%);
+                    }
+                }
+            }
+        }
+    }
+    .footer{
+        &-top{
+            &-inner{
+                padding: 25px 25px;
+                .footer-top-logo{
+                    img{
+                        width: 150px;
+                    }
+                }
+                .footer-top-icon{
+                    margin-top: 30px;
+                    i{
+                        padding: 0 15px;
+                    }
+                }  
+            }
+        }
+        &-bottom{
+            &-inner{
+                .category{
+                    .col(100%);
+                    padding-left: 30px;
+                }
+            }
+        }
+        .copyright{
+            font-size: 10px;
+        }
+    }
+}
